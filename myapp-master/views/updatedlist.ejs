@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title> Updated list </title>
+	</head>
+	<h1> Here is the list of the foods </h1>
+	<body>
+		<h2> Would you like to update any? <h2>
+				<ul>
+					<% availablefoods.forEach(function(food){ %>
+
+			<li><%= food.name %>, <%= food.value %>, <%= food.unit %>, <%= food.calories %>, <%= food.carbs %>, <%= food.fat %>, <%= food.protein %>, <%= food.salt %>, <%= food.sugar %></li>
+						      <% }) %>
+				</ul>
+				<form action="/update-result" method="GET">
+		                                                                            <input type ="hidden" name="name" value=<%=availablefoods.name%>>
+									                                        <input type="submit" value="Update" >								                                                                                               
+				</form>
+														<a href='/'>Home</a>
+</html>

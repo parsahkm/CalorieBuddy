@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title> Add food!</title>
+	</head>
+	<h1>Add any food you like!</h1>
+	<body>
+		<p>Please fill related data to add the food to database</p>
+		<form action="/foodadded" method="POST">
+			<label for="name">Name of food:</label>
+			<input id="addfood-box" type="text" name="name"><br><b>
+			
+			<label for="value">Typical values per:</label>
+			<input id="addfood-box" type="number" name="value"><br><b>
+				
+			<label for="unit">Unit of the typical value:</label>
+			<input id="addfood-box" type="text" name="unit"><br><b>
+
+			<label for="calories">Calories:</label>
+			<input id="addfood-box" type="number" step="any" name="calories"><br><b>
+
+			<label for="carbs">Carbs:</label>
+			<input id="addfood-box" type="number" step="any" name="carbs"><br><b>
+
+			<label for="fat">Fat:</label>
+			<input id="addfood-box" type="number" step="any" name="fat"><br><b>
+
+			<label for="protein">Protein:</label>
+			<input id="addfood-box" type="number" step="any" name="protein"><br><b>
+
+			<label for="salt">Salt:</label>
+			<input id="addfood-box" type="number" step="any" name="salt"><br><b>
+
+			<label for"sugar">Sugar:</label>
+			<input id="addfood-box" type="number" step="any" name="sugar"><br><b>
+
+			<input type="submit" value="OK" action="/bookadded" >
+
+		</form>
+			<a href='/'>Home</a>
+	</body>
+	</html>
+
+
+
+

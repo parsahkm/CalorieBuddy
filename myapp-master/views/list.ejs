@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+
+                                                                                                                                                                                                       
+
+    <title>List!</title>
+
+                                                                                                                                                                                                       
+
+  </head>
+
+                                                                                                                                                                                                       
+
+    <h1> This is the list of all the foods</h1>
+
+                                                                                                                                                                                                       
+
+          <body>
+
+                                                                                                                                                                                                       
+
+            <h3>You can see calories, carbs, fat, protein, salt, and sugar in a recipe based on food ingredients in the recipe:</h3>
+
+                                                                                                                                                                                                       
+
+            <ul>
+
+                                                                                                                                                                                                       
+
+              <% availablefoods.forEach(function(food){ %>
+
+                                                                                                                                                                                                       
+
+              <li><%= food.name %>, <%= food.value %>, <%= food.unit %>, <%= food.calories %>, <%= food.carbs %>, <%= food.fat %>, <%= food.protein %>, <%= food.salt %>, <%= food.sugar %></li>
+
+                                                                                                                                                                                                       
+
+             <% }) %>
+
+                                                                                                                                                                                                       
+
+            </ul>
+
+            <a href='/'>Home</a>
+
+  </body>
+
+                                                                                                                                                                                                       
+
+</html>
